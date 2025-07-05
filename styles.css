@@ -6,6 +6,14 @@
   transition: box-shadow 0.3s;
 }
 
+.about-me{
+border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  transition: box-shadow 1s;
+}
+
 .project-card:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
