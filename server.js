@@ -9,7 +9,7 @@ app.use(express.json());                // Parse JSON in POST requests
 app.use(express.urlencoded({ extended: true })); // Parse form data
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT,'0.0.0.0', () => {
