@@ -4,9 +4,10 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-app.use(express.static('public'));      // Serve static files (HTML, JS)
+     // Serve static files (HTML, JS)
 app.use(express.json());                // Parse JSON in POST requests
 app.use(express.urlencoded({ extended: true })); // Parse form data
+app.use(express.static(path.join(__dirname,'../vMuse')));
 
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
